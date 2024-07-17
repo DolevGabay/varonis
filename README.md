@@ -4,11 +4,10 @@
 - python misconfigurations.py
 
 
-# GitHub Repository Misconfigurations
+# GitHub Repository Misconfigurations Categories
 
 ## Misconfiguration: Repository Visibility Set to Public
 
-### Categories:
 - **Access Control**
   - Public repositories allow anyone to access the code, potentially exposing sensitive information or intellectual property. Proper access control ensures only authorized individuals can access the repository.
 
@@ -17,7 +16,6 @@
 
 ## Misconfiguration: Lack of Branch Protection Rules
 
-### Categories:
 - **Configuration Management**
   - Branch protection rules ensure that only reviewed and approved changes are merged into critical branches, maintaining a stable and secure codebase.
 
@@ -26,13 +24,11 @@
 
 ## Misconfiguration: Default Permissions for Outside Collaborators
 
-### Categories:
 - **Access Control**
   - Granting outside collaborators more permissions than necessary can lead to unauthorized changes or data breaches. Proper access control ensures only authorized users have appropriate levels of access.
 
 ## Misconfiguration: Unrestricted GitHub Actions Workflows
 
-### Categories:
 - **System and Communications Protection**
   - Unrestricted GitHub Actions workflows can execute arbitrary code, potentially compromising the system. Restrictions are necessary to maintain system security.
 
