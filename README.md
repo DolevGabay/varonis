@@ -5,9 +5,9 @@
 
 
 # GitHub Repository Misconfigurations Categories
+- Below are five specific configurations that can have security impacts on users or repositories:
 
 ## Misconfiguration: Repository Visibility Set to Public
-- Below are five specific configurations that can have security impacts on users or repositories:
 
 - **Access Control**
   - Public repositories allow anyone to access the code, potentially exposing sensitive information or intellectual property. Proper access control ensures only authorized individuals can access the repository.
