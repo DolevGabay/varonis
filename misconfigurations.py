@@ -1,7 +1,15 @@
-from github import Github
 import os
+import yaml
+from github import Github
 
-os.environ['GITHUB_TOKEN'] = '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'
+def load_config(config_file='config.yaml'):
+    with open(config_file, 'r') as file:
+        config = yaml.safe_load(file)
+    return config
+
+config = load_config()
+
+os.environ['GITHUB_TOKEN'] = config['github']['token']
 token = os.getenv('GITHUB_TOKEN')
 g = Github(token)
 
@@ -40,7 +48,7 @@ def check_and_add_ssh_key(ssh_key_title, ssh_key_path):
     user = g.get_user()
     keys = user.get_keys()
 
-    with open(ssh_key_path, 'r') as key_file:
+    with open(os.path.expanduser(ssh_key_path), 'r') as key_file:
         ssh_key = key_file.read().strip()
 
     for key in keys:
@@ -52,13 +60,9 @@ def check_and_add_ssh_key(ssh_key_title, ssh_key_path):
     print(f"SSH key '{ssh_key_title}' has been added to user '{user.login}'.")
 
 def main():
-    check_and_fix_repo_visibility("DolevGabay", "varonis")
-
-    check_and_fix_branch_protection("DolevGabay", "sigh-up", "main")
-
-    ssh_key_title = "my-laptop-ssh-key"
-    ssh_key_path = os.path.expanduser("~/.ssh/id_rsa.pub")
-    check_and_add_ssh_key(ssh_key_title, ssh_key_path)
+    check_and_fix_repo_visibility(config['github']['username'], config['github']['repo_visibility'])
+    check_and_fix_branch_protection(config['github']['username'], config['github']['repo_protection'], config['github']['branch'])
+    check_and_add_ssh_key(config['github']['ssh_key_title'], config['github']['ssh_key_path'])
 
 if __name__ == "__main__":
     main()

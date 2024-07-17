@@ -1,0 +1,8 @@
+github:
+  token: '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'
+  username: 'DolevGabay'
+  repo_visibility: 'varonis'
+  repo_protection: 'sigh-up'
+  branch: 'main'
+  ssh_key_title: 'my-laptop-ssh-key'
+  ssh_key_path: '~/.ssh/id_rsa.pub'
