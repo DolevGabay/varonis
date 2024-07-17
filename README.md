@@ -208,6 +208,6 @@ This framework should be design to automatically detect and fix misconfiguration
 
 
 # Bonus
-## Running the script search-token.py allows you to search for private tokens in any given public repository. This exposes the private key, putting it at risk.
+Running the script search-token.py allows you to search for private tokens in any given public repository. This exposes the private key, putting it at risk.
 
 ![Branch Protection](images/risk_of_public.png)
