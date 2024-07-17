@@ -37,19 +37,16 @@ Implementing branch protection rules may slow down the integration of changes sl
 ## Code Example for Misconfiguration: Lack of Branch Protection Rules
 The function `check_and_fix_repo_branch_protection` checks whether the repository has protection rules. If not, it adds some rules.
 
-## Code screenshot
 ![Branch Protection](images/check_and_fix_branch_protection.png)
 
 ## Code Example for Misconfiguration: Repository Visibility Set to Public
 The function `check_and_fix_repo_visibility` checks whether the repository is private. If it is not private, the function changes its visibility to private.
 
-## Code screenshot
 ![Branch Protection](images/check_and_fix_repo_visibility.png)
 
 ## Code Example for Misconfiguration: Missing SSH Key for Secure Access
 The function `check_and_add_ssh_key` checks whether the user has SSH key. If it is not it adds one.
 
-## Code screenshot
 ![Branch Protection](images/check_and_add_ssh_key.png)
 
 
