@@ -47,7 +47,7 @@
 Setting up branch protection rules is essential to maintain the integrity and stability of critical branches in your repository. Here are some practical best practices:
 
 ### 1. Require Pull Request Reviews
-- **Require Approval from Reviewers**: Ensure that every pull request (PR) to the protected branch is reviewed and approved by at least one or two qualified reviewers.
+- **Require Approval from Reviewers**: Ensure that every pull request to the protected branch is reviewed and approved by at least one or two qualified reviewers.
 - **Enforce Code Owner Reviews**: If you have code owners specified, their approval should be mandatory.
 - **Diverse Reviewers**: Encourage reviews from different team members to get varied perspectives and catch more potential issues.
 
@@ -85,13 +85,6 @@ Implementing branch protection rules may slow down the integration of changes sl
 **MITRE ATT&CK Technique: T1078 - Valid Accounts**
 - **Explanation:** This technique involves using valid accounts to gain unauthorized access. Without branch protection, compromised accounts can make changes to critical branches without detection.
 - **How It Relates:** Branch protection rules add an extra layer of defense, ensuring that even valid accounts cannot make malicious or unchecked changes.
-
-## Categories
-1. **Configuration Management**
-    - Branch protection rules are part of configuration management, ensuring that only reviewed and approved changes are merged into critical branches. This helps maintain a stable and secure codebase.
-
-2. **System and Information Integrity**
-    - Branch protection rules help maintain the integrity of the codebase by enforcing reviews and preventing unauthorized or accidental changes to critical branches.
 
 ## Output Example for Misconfiguration: Lack of Branch Protection Rules
 The function `check_and_fix_repo_branch_protection` checks whether the repository has protection rules. If not, it adds some rules.
