@@ -1,7 +1,13 @@
 ## Setup
 - pip install PyGithub
 - pip install pyyaml
+- Configure the config.yaml file with the necessary settings
 - python misconfigurations.py
+
+### Considerations:
+- Permissions: The GitHub token used must have sufficient permissions to change repository settings, add branch protections, and manage SSH keys.
+- Impact on users: Changing a repository from public to private is a significant action that can affect users' access. Make sure this is intended.
+- Security: Storing and using tokens and SSH keys should be handled securely to prevent unauthorized access. Consider backing up current repository settings before making changes. This can help in restoring the previous state if needed.
 
 
 # GitHub Repository Misconfigurations Categories
