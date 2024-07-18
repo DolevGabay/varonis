@@ -37,7 +37,7 @@ def check_and_fix_branch_protection(user_name, repo_name, branch_name):
     except:
         print(f"Branch '{branch_name}' does not have protection rules. Adding protection rules.")
         repo.get_branch(branch_name).edit_protection(
-            required_approving_review_count=1,  # At least one review is required to approve a pull request
+            required_approving_review_count=1,  # At least one review is required to approve pull request
             enforce_admins=True,                # Admins must also follow these rules
             require_code_owner_reviews=True     # At least one review must come from a code owner
         )

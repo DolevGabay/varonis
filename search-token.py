@@ -43,7 +43,7 @@ def search_for_token_in_public_repo(user_name, repo_name, file_name='config.yaml
     except Exception as e:
         print(f"Error searching repository '{repo_name}': {e}")
 
-# Demonstrate the risk of misconfiguring by searching for a token in a public repository
+#  Demonstrate the risk of misconfiguring by searching for a token in a public repository
 public_user = "DolevGabay"
 public_repo = "varonis"
 search_for_token_in_public_repo(public_user, public_repo)

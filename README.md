@@ -72,7 +72,7 @@ Setting up branch protection rules is essential to maintain the integrity and st
 ## 3. Restrict Pushes
 - **Restrict Who Can Push to the Branch**: Limit push access to the branch to only those who have the necessary permissions. Typically, only maintainers or senior developers should have direct push access.
 
-## 4. Lock the Branch
+## 4. Lock the Branch 
 - **Lock the Branch**: Prevent any direct commits to the branch by locking it. All changes must go through the pull request process.
 
 Implementing these best practices will help safeguard critical branches from unauthorized or accidental changes, ensuring the stability and security of a project.
@@ -109,7 +109,7 @@ The function `check_and_fix_repo_branch_protection` checks whether the repositor
 ## Output Example for Misconfiguration: Repository Visibility Set to Public
 The function `check_and_fix_repo_visibility` checks whether the repository is private. If it is not private, the function changes its visibility to private.
 
-![Branch Protection](images/check_and_fix_repo_visibility.png)
+![repo visibility](images/check_and_fix_repo_visibility.png)
 
 ## Output Example for Misconfiguration: Missing SSH Key for Secure Access
 The function `check_and_add_ssh_key` checks whether the user has SSH key. If it is not it adds one.
