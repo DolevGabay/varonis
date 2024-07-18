@@ -21,6 +21,8 @@
 - **System and Information Integrity**
   - Making repositories private prevents unauthorized access and potential tampering with data, maintaining the system's integrity.
 
+![Branch Protection](images/visibility.png)
+
 ## Misconfiguration: Lack of Branch Protection Rules
 
 - **Configuration Management**
