@@ -21,7 +21,7 @@
 - **System and Information Integrity**
   - Making repositories private prevents unauthorized access and potential tampering with data, maintaining the system's integrity.
 
-![Branch Protection](images/visibility.png)
+![visibility](images/visibility.png)
 
 ## Misconfiguration: Lack of Branch Protection Rules
 
@@ -31,15 +31,21 @@
 - **System and Information Integrity**
   - These rules enforce reviews, preventing unauthorized or accidental changes to critical branches and maintaining codebase integrity.
 
+![branch-protection](images/branch-protection.png)  
+
 ## Misconfiguration: Default Permissions for Outside Collaborators
 
 - **Access Control**
   - Granting outside collaborators more permissions than necessary can lead to unauthorized changes or data breaches. Proper access control ensures only authorized users have appropriate levels of access.
 
+![collaborators](images/collaborators.png)    
+
 ## Misconfiguration: Unrestricted GitHub Actions Workflows
 
 - **System and Communications Protection**
   - Unrestricted GitHub Actions workflows can execute arbitrary code, potentially compromising the system. Restrictions are necessary to maintain system security.
+
+![actions](images/actions.png) 
 
 ## Misconfiguration: Missing SSH Key for Secure Access
 
@@ -47,6 +53,7 @@
 - **Identification and Authentication**
   - SSH keys are a secure method for authenticating users. Ensuring users have SSH keys enhances the identification and authentication process, making it more secure.
 
+![ssh-key](images/ssh-key.png)
 
 # Branch Protection Rules
 
